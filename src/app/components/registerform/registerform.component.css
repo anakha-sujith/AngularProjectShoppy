@@ -1,0 +1,86 @@
+.s-btn,
+.s-btn-primary {
+  background: #fff !important;
+  outline: none;
+  border: 1px solid #808080;
+  color: #808080;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.s-btn-primary {
+  background: #ea227a !important;
+  outline: none;
+  border: none;
+  color: white;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.s-btn-mini {
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.s-login-wrapper {
+  background-color: #f3f3f4;
+  background-image: url("/assets/products/bg-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 108vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-login-box {
+  padding: 32px 48px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 16px #00000022;
+  width: min(400px, 100%);
+  text-align: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #1e1e1e;
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  font-size: 14px !important;
+}
+
+a {
+  text-decoration: none;
+  color: #ea227a !important;
+}
+
+.eyeicon {
+  margin-left: 269px;
+  top: -32px;
+  position: relative;
+}
+
+.fa-eye-slash.btn {
+
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+span {
+  color: red;
+}

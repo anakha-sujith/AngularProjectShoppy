@@ -1,0 +1,29 @@
+<div class="s-login-wrapper">
+  <div class="s-login-box">
+    <h1 class="mb-4 fw-bold">Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="form-group input-group-lg mb-4" [class.error]="userName && userName.invalid && userName.touched">
+        <input type="text" class="form-control" id="" name="userName" formControlName="userName"
+          placeholder="Enter userName" />
+        <span class="row" *ngIf="userName && userName.invalid && userName.touched">*username required</span>
+      </div>
+      <div class="form-group input-group-lg mb-4">
+        <input type="password" class="form-control" id="" placeholder="Enter Password" name="passsword"
+          formControlName="passsword" [type]="changetype?'password':'text'" /><small class="eyeicon"
+          (click)="showPassword()"><i [ngClass]="visible?'fa fa-eye-slash':'fa fa-eye'"></i>
+        </small>
+        <span class="row" *ngIf="passsword && passsword.invalid && passsword.touched">*passsword required</span>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary s-btn-primary btn-lg w-100 mb-3" [disabled]="loginForm.invalid">
+        Login
+      </button>
+    </form>
+
+    <p>
+      Don't have an account?
+      <a href="#" class="fw-bold" routerLink="/register">Sign Up</a>
+    </p>
+  </div>
+</div>

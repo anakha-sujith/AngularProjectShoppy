@@ -1,0 +1,90 @@
+.has-bg {
+  position: fixed;
+  margin-right: 17px;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 88px;
+  background: #f39da0;
+  z-index: 100;
+}
+
+.hero-image {
+  background-image: url("/assets/products/hero.png");
+  width: 100%;
+  height: 80vh;
+  margin-top: 88px;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.fw-semi {
+  font-weight: 600 !important;
+}
+
+.fw-m {
+  font-weight: 500 !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-25 {
+  font-size: 25px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-50 {
+  font-size: 50px !important;
+}
+
+.s-btn,
+.s-btn-primary {
+  background: #fff !important;
+  outline: none;
+  border: 1px solid #808080;
+  color: #808080;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.s-btn-primary {
+  background: #ea227a !important;
+  outline: none;
+  border: none;
+  color: white;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.s-btn-mini {
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card {
+  background: #fdeded;
+  width: 100%;
+  max-width: 30rem;
+}

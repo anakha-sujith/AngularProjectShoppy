@@ -1,0 +1,15 @@
+<header class="s-header mb-5">
+    <div class="s-logo">
+        <img src="/assets/products/logo.png" alt="logo" />
+    </div>
+
+    <button class="s-cart-btn" [routerLink]="['/cart']">
+        <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+        <span class="s-cart-count"> {{cartItemsCount}} </span>
+    </button>
+
+    <div class="dropdown s-header-profile">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" (click)="logout()">{{userdata}}</button>
+    </div>
+</header>
