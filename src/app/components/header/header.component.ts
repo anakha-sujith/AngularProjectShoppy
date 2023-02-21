@@ -43,23 +43,15 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  // logout() {
-  //   this.confirm.showConfirm("Do you want to logout?", () => {
-  //     this.auth.signOut()
-  //     this.auth.setLoggin(false);
-  //   }, () => {
-
-  //   })
-  // }
   logout() {
-    // this.confirm.showConfirm("Do you want to delete the cart item?", () => {
-      alert("Do you want to logout?")
+    this.confirm.showConfirm("Do you want to logout?", () => {
       this.auth.signOut()
       this.auth.setLoggin(false);
-    // }, () => {
+    }, () => {
 
-    // })
+    })
   }
+ 
 
   getnamefromToken() {
     this.userdata = localStorage.getItem('user')
