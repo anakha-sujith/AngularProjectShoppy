@@ -1,0 +1,88 @@
+.s-header {
+  flex: 0 0 auto;
+  padding: 12px 32px;
+  position: fixed;
+  transition: 0.3s ease;
+  top: 0;
+  z-index: 1;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: 0.3s ease;
+  margin-top: 0px;
+}
+
+.s-header .s-logo {
+  flex: 1 1 auto;
+}
+
+.s-header img {
+  width: auto;
+  height: 64px;
+}
+
+.s-cart-btn {
+  outline: none;
+  border: 1px solid #7a1740;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  color: #7a1740;
+  position: relative;
+}
+
+.s-cart-count {
+  background: red;
+  color: white;
+  height: 16px;
+  display: flex;
+  font-size: 10px;
+  border-radius: 8px;
+  width: 16px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.s-header-profile button {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+.fw-semi {
+  font-weight: 600 !important;
+}
+
+.fw-m {
+  font-weight: 500 !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-25 {
+  font-size: 25px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-50 {
+  font-size: 50px !important;
+}

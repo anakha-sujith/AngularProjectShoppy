@@ -1,0 +1,61 @@
+.carousel-inner .item img {
+  height: 399px !important;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-indicators {
+  bottom: -40px !important;
+}
+
+.carousel-indicators li {
+  background-color: #d9d9d9 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #ea227a !important;
+}
+
+.fw-semi {
+  font-weight: 600 !important;
+}
+
+.fw-m {
+  font-weight: 500 !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-25 {
+  font-size: 25px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fs-50 {
+  font-size: 50px !important;
+}
+
+.has-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  height: 88px;
+  background: #f39da0;
+  z-index: 99;
+}

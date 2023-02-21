@@ -1,0 +1,65 @@
+<app-header class="has-bg"></app-header>
+<main class="page_body">
+  <div class="container">
+    <h1 class="fs-50 fw-bold mb-5">Your Cart</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <section class="col me-4">
+          <ng-container *ngIf="cartItems.length==0">
+            <div class="no-cart">
+              <div class="empty-cart-icon">
+                <img src="../../../assets/products/emptycart.png" alt="empty cart">
+              </div>
+              <p>No Items in Cart</p>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="cartItems.length!=0">
+            <div class="row px-5">
+              <div class="col-9">
+                <p class="fw-bold">Item</p>
+              </div>
+              <div class="col-2">
+                <p class="fw-bold">Price</p>
+              </div>
+              <!-- <div class="col-1"></div> -->
+            </div>
+            <div class="row s-product-cart" *ngFor="let product of cartItems">
+              <div class="col-9">
+                <img src="{{product.productImage}}" alt="img" [routerLink]="['/productdetail', product.productId]" />
+                <span class="fs-18 m-0 fw-bold">{{product.productName}}</span>
+              </div>
+              <div class="col-2">
+                <span class="fs-18 m-0 fw-bold">{{product.price|currency:'INR'}}</span>
+              </div>
+              <div class="col-1">
+                <button class="c-rmv-btn">
+                  <i class="fa-regular fa-trash-can" (click)="deleteFromCart(product.cartId)"></i>
+                </button>
+              </div>
+            </div>
+          </ng-container>
+        </section>
+        <section class="col-md-4" style="width: 350px">
+          <p class="fw-bold">Order Summary</p>
+          <div class="row s-cart-summary">
+            <div class="row">
+              <p class="col fs-18">Total</p>
+              <p class="col-3 fs-18 fw-bold">{{total|currency:'INR'}}</p>
+            </div>
+            <div class="row">
+              <p class="col fs-18">Shipping</p>
+              <p class="col-3 fs-18 fw-bold">{{shipping|currency:'INR'}}</p>
+            </div>
+          </div>
+          <div class="row mb-4 px-3">
+            <p class="col fw-bold">Sub Total</p>
+            <h5 class="col-4 fs-18 fw-bold">{{subtotal | currency:'INR'}}</h5>
+          </div>
+          <button class="btn btn-primary s-btn-primary w-100" routerLink="/products">
+            Back to Products
+          </button>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>

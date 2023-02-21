@@ -1,0 +1,28 @@
+<app-header class="has-bg"></app-header>
+<main class="s-main">
+  <div class="hero-image mb-5"></div>
+  <section class="container s-cards-wrap mb-5">
+    <h1 class="fs-50 fw-bold mb-5">New Arrivals</h1>
+    <section class="row justify-content-center g-5 container-fluid">
+      <div class="col-md-4" *ngFor="let product of productsList">
+        <div class="card border-0 rounded">
+          <img class="card-img-top" [src]="product.productImage" alt="Card image cap"
+            [routerLink]="['/productdetail', product.productId]" />
+          <div class="card-body">
+            <h5 class="s-card-title">{{product.productName}}</h5>
+            <h6 class="s-card-text">Ethnic Collection</h6>
+            <div class="d-flex align-middle">
+              <h6 class="flex-fill m-0 fw-semi">{{product.price|currency:'INR'}}</h6>
+              <h5 class="flex-fill m-0 fw-semi"
+                [ngStyle]="{color: product.productType === 'in-stock' ? 'Green' : 'Red'}">{{product.productType}}</h5>
+              <button class="btn btn-primary s-btn-primary s-btn-mini" (click)="insertIntoCart(product)"
+                *ngIf="product.productType === 'in-stock'">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>

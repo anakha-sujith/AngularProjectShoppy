@@ -1,0 +1,43 @@
+<app-header class="has-bg"></app-header>
+<main class="container">
+  <h1 class="fs-50 fw-bold mb-5">Product Details</h1>
+  <section class="container-fluid">
+    <div class="row g-5">
+      <div class="col-md-5">
+        <div id="myCarousel" class="carousel slide rounded" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            &nbsp;
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            &nbsp;
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img [src]="this.product?.productImage" />
+            </div>
+
+            <div class="item">
+              <img [src]="this.product?.productImage" />
+            </div>
+
+            <div class="item">
+              <img [src]="this.product?.productImage" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <h2 class="fs-30 fw-bold">{{this.product?.productName}}</h2>
+        <p class="fs-30 fw-m mb-0">{{this.product?.price | currency:'INR'}}</p>
+        <p class="fs-20 fw-m text-success">{{this.product?.productType}}</p>
+        <p class="fs-18 mb-4">
+          {{this.product?.productDescription}}
+        </p>
+        <button class="btn btn-primary s-btn-primary s-btn-mini" routerLink="/products">
+          Back to Products
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
